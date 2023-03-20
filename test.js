@@ -3,7 +3,7 @@ window.onload = function() {
   var popup = document.getElementById("popup-ad");
   var closeBtn = document.querySelector(".close-btn");
 
-  if (localStorage.getItem("popupShown") === "true") {
+  if (localStorage.getItem("popupShown") !== "true") {
     setTimeout(function() {
       popup.style.display = "block";
     }, 2000);
